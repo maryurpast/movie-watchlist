@@ -176,15 +176,15 @@ header a {
 
 @media (max-width: 576px) {
   header {
-    padding: 4em 1.5em;
+    padding: 4em 1em;
   }
 
   .searching-bar {
-    padding: 0 1.5em;
+    padding: 0 1em;
   }
 
   .content {
-    padding: 1.5em;
+    padding: 1em;
   }
 
   .film-info {
