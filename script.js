@@ -15,7 +15,7 @@ if (document.querySelector("#searching-form")) {
 
       const inputValue = document.querySelector(".searching-bar-input").value;
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=${apiKey}&s=${inputValue}`
+        `http://www.omdbapi.com/?apikey=${apiKey}&s=${inputValue}/`
       );
       const data = await response.json();
 
@@ -33,7 +33,7 @@ if (document.querySelector("#searching-form")) {
 
 async function getFilmsDetails(filmData) {
   let response = await fetch(
-    `http://www.omdbapi.com/?apikey=${apiKey}&t=${filmData.Title}`
+    `http://www.omdbapi.com/?apikey=${apiKey}&t=${filmData.Title}/`
   );
   let filmDetails = await response.json();
   filmlist = [...filmlist, filmDetails];
