@@ -13,7 +13,9 @@ if (document.querySelector("#searching-form")) {
       filmsHtml = "";
       renderFilms();
 
-      const inputValue = document.querySelector(".searching-bar-input").value;
+      const inputValue = document
+        .querySelector(".searching-bar-input")
+        .value.trim();
       const response = await fetch(
         `http://www.omdbapi.com/?apikey=${apiKey}&s=${inputValue}/`
       );
