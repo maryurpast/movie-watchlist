@@ -167,7 +167,7 @@ header a {
 }
 
 .film-add img {
-  margin: 0 0.3em 0 2.5em;
+  margin: 0 0.3em 0 1.5em;
 }
 
 .film-description-text {
@@ -191,8 +191,12 @@ header a {
     padding-left: 0;
   }
 
+  .film-duration {
+    margin-right: 1em;
+  }
+
   .film-add img {
-    margin: 0 0.3em 0 1.5em;
+    margin: 0 0.3em 0 1em;
   }
 
   header h1 {
